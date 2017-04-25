@@ -10,7 +10,7 @@ class Places
   end
 
   define_singleton_method(:all) do
-    []
+    @@all_places
   end
 
   define_method(:save) do

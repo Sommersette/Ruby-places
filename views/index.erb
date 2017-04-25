@@ -1,0 +1,17 @@
+<h1>Places I've been</h1>
+
+<ul>
+  <% @places.each() do |places|%>
+  <li><%= places.location() %></li>
+  <% end %>
+</ul>
+
+
+
+<form  action="/places" method="post">
+  <label> Location </label>
+  <input require placeholder="add location" type="text" name="location">
+
+  <button type="submit">Add location</button>
+
+</form>
